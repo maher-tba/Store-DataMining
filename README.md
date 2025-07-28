@@ -49,17 +49,20 @@ jupyter>=1.0.0
 ## هيكل المشروع
 
 ```
+
 product-recommendation-system/
 │
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_association_rules.ipynb
-│   ├── 03_clustering_analysis.ipynb
-│   ├── 04_price_impact_study.ipynb
-│   └── 05_final_recommendation_system.ipynb
+├── streamlit_app.py              # Main Streamlit application
+├── pages/
+│   ├── 01_data_exploration.ipynb       # Data exploration page
+│   ├── 02_association_rules.ipynb   # Association rules analysis
+│   ├── 03_Clustering_Analysis.ipynb # Clustering analysis
+│   ├── 04_Price_Impact_Study.py  # Price impact study
+│   └── 05_Recommendation_System.py # Final recommendation system
 │
 ├── data/
-│   ├── raw/
+│   ├── Extended_Products_Dataset__25_Products.csv
+│   ├── Invoices_Dataset_for_Association_Rules.csv
 │   ├── processed/
 │   └── results/
 │
@@ -72,8 +75,6 @@ product-recommendation-system/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
-
 ## كيفية التشغيل
 
 1. **تثبيت المتطلبات:**
