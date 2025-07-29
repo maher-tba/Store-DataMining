@@ -6,7 +6,7 @@ import os
 from pages.Data_Analysis import show_data_analysis_page
 from pages.association_rules import show_association_rules_page
 from pages.clustering import show_clustering_page
-
+from pages.Beast_Price import show_price_impact_page
 from pages.recommendation_system import show_recommendation_page
 # إعداد الصفحة
 st.set_page_config(
@@ -242,15 +242,6 @@ def show_home_page():
 
 
 
-def show_price_impact_page():
-    """صفحة دراسة تأثير السعر"""
-    st.title("💰 دراسة تأثير السعر")
-    st.info("ستحلل هذه الصفحة كيفية تأثير إدراج السعر على جودة التجميع.")
-    st.markdown("**الميزات ستشمل:**")
-    st.markdown("- مقارنة التجميع مع/بدون السعر")
-    st.markdown("- حساب مقاييس الجودة")
-    st.markdown("- تحليل أهمية الخصائص")
-    st.markdown("- تقييم جودة التوصيات")
 
 
 if __name__ == "__main__":
