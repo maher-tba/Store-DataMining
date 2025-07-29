@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 import os
 from pages.Data_Analysis import show_data_analysis_page
-
+from pages.association_rules import show_association_rules_page
 # إعداد الصفحة
 st.set_page_config(
     page_title="نظام توصية المنتجات",
@@ -238,15 +238,7 @@ def show_home_page():
 
 
 
-def show_association_rules_page():
-    """صفحة قواعد الارتباط"""
-    st.title("🔗 تحليل قواعد الارتباط")
-    st.info("ستقوم هذه الصفحة باستخراج وعرض قواعد الارتباط باستخدام خوارزمية Apriori.")
-    st.markdown("**الميزات ستشمل:**")
-    st.markdown("- استخراج المجموعات المتكررة")
-    st.markdown("- توليد قواعد الارتباط")
-    st.markdown("- مقاييس الدعم والثقة والرفع")
-    st.markdown("- استكشاف القواعد التفاعلي")
+
 
 def show_clustering_page():
     """صفحة تحليل التجميع"""
