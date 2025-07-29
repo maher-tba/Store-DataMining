@@ -5,6 +5,7 @@ from PIL import Image
 import os
 from pages.Data_Analysis import show_data_analysis_page
 from pages.association_rules import show_association_rules_page
+from pages.clustering import show_clustering_page
 # إعداد الصفحة
 st.set_page_config(
     page_title="نظام توصية المنتجات",
@@ -238,17 +239,6 @@ def show_home_page():
 
 
 
-
-
-def show_clustering_page():
-    """صفحة تحليل التجميع"""
-    st.title("🎯 تحليل التجميع")
-    st.info("ستقوم هذه الصفحة بتنفيذ تجميع K-Means على خصائص المنتجات.")
-    st.markdown("**الميزات ستشمل:**")
-    st.markdown("- تحديد العدد الأمثل للمجموعات")
-    st.markdown("- نتائج تجميع K-Means")
-    st.markdown("- تصور المجموعات")
-    st.markdown("- تحليل تجميع المنتجات")
 
 def show_price_impact_page():
     """صفحة دراسة تأثير السعر"""
