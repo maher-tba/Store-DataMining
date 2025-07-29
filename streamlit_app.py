@@ -6,6 +6,8 @@ import os
 from pages.Data_Analysis import show_data_analysis_page
 from pages.association_rules import show_association_rules_page
 from pages.clustering import show_clustering_page
+
+from pages.recommendation_system import show_recommendation_page
 # إعداد الصفحة
 st.set_page_config(
     page_title="نظام توصية المنتجات",
@@ -250,15 +252,6 @@ def show_price_impact_page():
     st.markdown("- تحليل أهمية الخصائص")
     st.markdown("- تقييم جودة التوصيات")
 
-def show_recommendation_page():
-    """صفحة نظام التوصية"""
-    st.title("🤖 نظام التوصية")
-    st.info("ستوفر هذه الصفحة واجهة توصية المنتجات النهائية.")
-    st.markdown("**الميزات ستشمل:**")
-    st.markdown("- البحث واختيار المنتجات")
-    st.markdown("- التوصيات المبنية على الارتباط")
-    st.markdown("- التوصيات المبنية على التجميع")
-    st.markdown("- نقاط التوصية المدمجة")
 
 if __name__ == "__main__":
     main()
